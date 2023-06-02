@@ -1,3 +1,3 @@
-# Traffic_Light_Transfer_Control
+# Efficient Policy Transfer in Large-Scale Traffic Light Control via Multi-Agent Hierarchical Reinforcement Learning
 
-The paper is accepted by IEEE CASE 2023
+The paper is accepted by IEEE CASE 2023.
