@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+
+
+   <connection from="r11" to="r12"/>
+   <connection from="r12" to="r13"/>
+
+
+   <connection from="r21" to="r22"/>
+   <connection from="r22" to="r23"/>
+
+
+   <connection to="l10" from="l11"/>
+   <connection to="l11" from="l12"/>
+
+
+   <connection to="l20" from="l21"/>
+   <connection to="l21" from="l22"/>
+
+
+   <connection from="d11" to="d21"/>
+   <connection from="d21" to="d31"/>
+
+
+   <connection from="d12" to="d22"/>
+   <connection from="d22" to="d32"/>
+
+
+   <connection to="u01" from="u11"/>
+   <connection to="u11" from="u21"/>
+
+
+   <connection to="u02" from="u12"/>
+   <connection to="u12" from="u22"/>
+
+
+</connections>

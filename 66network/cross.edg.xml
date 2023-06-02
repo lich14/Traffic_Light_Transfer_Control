@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/edges_file.xsd">
+
+
+   <edge id="r11" from="l1" to="11" priority="1" numLanes="1" speed="15" />
+   <edge id="r12" from="11" to="12" priority="1" numLanes="1" speed="15" />
+   <edge id="r13" from="12" to="13" priority="1" numLanes="1" speed="15" />
+   <edge id="r14" from="13" to="14" priority="1" numLanes="1" speed="15" />
+   <edge id="r15" from="14" to="15" priority="1" numLanes="1" speed="15" />
+   <edge id="r16" from="15" to="16" priority="1" numLanes="1" speed="15" />
+   <edge id="r17" from="16" to="r1" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="r21" from="l2" to="21" priority="1" numLanes="1" speed="15" />
+   <edge id="r22" from="21" to="22" priority="1" numLanes="1" speed="15" />
+   <edge id="r23" from="22" to="23" priority="1" numLanes="1" speed="15" />
+   <edge id="r24" from="23" to="24" priority="1" numLanes="1" speed="15" />
+   <edge id="r25" from="24" to="25" priority="1" numLanes="1" speed="15" />
+   <edge id="r26" from="25" to="26" priority="1" numLanes="1" speed="15" />
+   <edge id="r27" from="26" to="r2" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="r31" from="l3" to="31" priority="1" numLanes="1" speed="15" />
+   <edge id="r32" from="31" to="32" priority="1" numLanes="1" speed="15" />
+   <edge id="r33" from="32" to="33" priority="1" numLanes="1" speed="15" />
+   <edge id="r34" from="33" to="34" priority="1" numLanes="1" speed="15" />
+   <edge id="r35" from="34" to="35" priority="1" numLanes="1" speed="15" />
+   <edge id="r36" from="35" to="36" priority="1" numLanes="1" speed="15" />
+   <edge id="r37" from="36" to="r3" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="r41" from="l4" to="41" priority="1" numLanes="1" speed="15" />
+   <edge id="r42" from="41" to="42" priority="1" numLanes="1" speed="15" />
+   <edge id="r43" from="42" to="43" priority="1" numLanes="1" speed="15" />
+   <edge id="r44" from="43" to="44" priority="1" numLanes="1" speed="15" />
+   <edge id="r45" from="44" to="45" priority="1" numLanes="1" speed="15" />
+   <edge id="r46" from="45" to="46" priority="1" numLanes="1" speed="15" />
+   <edge id="r47" from="46" to="r4" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="r51" from="l5" to="51" priority="1" numLanes="1" speed="15" />
+   <edge id="r52" from="51" to="52" priority="1" numLanes="1" speed="15" />
+   <edge id="r53" from="52" to="53" priority="1" numLanes="1" speed="15" />
+   <edge id="r54" from="53" to="54" priority="1" numLanes="1" speed="15" />
+   <edge id="r55" from="54" to="55" priority="1" numLanes="1" speed="15" />
+   <edge id="r56" from="55" to="56" priority="1" numLanes="1" speed="15" />
+   <edge id="r57" from="56" to="r5" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="r61" from="l6" to="61" priority="1" numLanes="1" speed="15" />
+   <edge id="r62" from="61" to="62" priority="1" numLanes="1" speed="15" />
+   <edge id="r63" from="62" to="63" priority="1" numLanes="1" speed="15" />
+   <edge id="r64" from="63" to="64" priority="1" numLanes="1" speed="15" />
+   <edge id="r65" from="64" to="65" priority="1" numLanes="1" speed="15" />
+   <edge id="r66" from="65" to="66" priority="1" numLanes="1" speed="15" />
+   <edge id="r67" from="66" to="r6" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="l10" to="l1" from="11" priority="1" numLanes="1" speed="15" />
+   <edge id="l11" to="11" from="12" priority="1" numLanes="1" speed="15" />
+   <edge id="l12" to="12" from="13" priority="1" numLanes="1" speed="15" />
+   <edge id="l13" to="13" from="14" priority="1" numLanes="1" speed="15" />
+   <edge id="l14" to="14" from="15" priority="1" numLanes="1" speed="15" />
+   <edge id="l15" to="15" from="16" priority="1" numLanes="1" speed="15" />
+   <edge id="l16" to="16" from="r1" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="l20" to="l2" from="21" priority="1" numLanes="1" speed="15" />
+   <edge id="l21" to="21" from="22" priority="1" numLanes="1" speed="15" />
+   <edge id="l22" to="22" from="23" priority="1" numLanes="1" speed="15" />
+   <edge id="l23" to="23" from="24" priority="1" numLanes="1" speed="15" />
+   <edge id="l24" to="24" from="25" priority="1" numLanes="1" speed="15" />
+   <edge id="l25" to="25" from="26" priority="1" numLanes="1" speed="15" />
+   <edge id="l26" to="26" from="r2" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="l30" to="l3" from="31" priority="1" numLanes="1" speed="15" />
+   <edge id="l31" to="31" from="32" priority="1" numLanes="1" speed="15" />
+   <edge id="l32" to="32" from="33" priority="1" numLanes="1" speed="15" />
+   <edge id="l33" to="33" from="34" priority="1" numLanes="1" speed="15" />
+   <edge id="l34" to="34" from="35" priority="1" numLanes="1" speed="15" />
+   <edge id="l35" to="35" from="36" priority="1" numLanes="1" speed="15" />
+   <edge id="l36" to="36" from="r3" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="l40" to="l4" from="41" priority="1" numLanes="1" speed="15" />
+   <edge id="l41" to="41" from="42" priority="1" numLanes="1" speed="15" />
+   <edge id="l42" to="42" from="43" priority="1" numLanes="1" speed="15" />
+   <edge id="l43" to="43" from="44" priority="1" numLanes="1" speed="15" />
+   <edge id="l44" to="44" from="45" priority="1" numLanes="1" speed="15" />
+   <edge id="l45" to="45" from="46" priority="1" numLanes="1" speed="15" />
+   <edge id="l46" to="46" from="r4" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="l50" to="l5" from="51" priority="1" numLanes="1" speed="15" />
+   <edge id="l51" to="51" from="52" priority="1" numLanes="1" speed="15" />
+   <edge id="l52" to="52" from="53" priority="1" numLanes="1" speed="15" />
+   <edge id="l53" to="53" from="54" priority="1" numLanes="1" speed="15" />
+   <edge id="l54" to="54" from="55" priority="1" numLanes="1" speed="15" />
+   <edge id="l55" to="55" from="56" priority="1" numLanes="1" speed="15" />
+   <edge id="l56" to="56" from="r5" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="l60" to="l6" from="61" priority="1" numLanes="1" speed="15" />
+   <edge id="l61" to="61" from="62" priority="1" numLanes="1" speed="15" />
+   <edge id="l62" to="62" from="63" priority="1" numLanes="1" speed="15" />
+   <edge id="l63" to="63" from="64" priority="1" numLanes="1" speed="15" />
+   <edge id="l64" to="64" from="65" priority="1" numLanes="1" speed="15" />
+   <edge id="l65" to="65" from="66" priority="1" numLanes="1" speed="15" />
+   <edge id="l66" to="66" from="r6" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="d11" from="u1" to="11" priority="1" numLanes="1" speed="15" />
+   <edge id="d21" from="11" to="21" priority="1" numLanes="1" speed="15" />
+   <edge id="d31" from="21" to="31" priority="1" numLanes="1" speed="15" />
+   <edge id="d41" from="31" to="41" priority="1" numLanes="1" speed="15" />
+   <edge id="d51" from="41" to="51" priority="1" numLanes="1" speed="15" />
+   <edge id="d61" from="51" to="61" priority="1" numLanes="1" speed="15" />
+   <edge id="d71" from="61" to="d1" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="d12" from="u2" to="12" priority="1" numLanes="1" speed="15" />
+   <edge id="d22" from="12" to="22" priority="1" numLanes="1" speed="15" />
+   <edge id="d32" from="22" to="32" priority="1" numLanes="1" speed="15" />
+   <edge id="d42" from="32" to="42" priority="1" numLanes="1" speed="15" />
+   <edge id="d52" from="42" to="52" priority="1" numLanes="1" speed="15" />
+   <edge id="d62" from="52" to="62" priority="1" numLanes="1" speed="15" />
+   <edge id="d72" from="62" to="d2" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="d13" from="u3" to="13" priority="1" numLanes="1" speed="15" />
+   <edge id="d23" from="13" to="23" priority="1" numLanes="1" speed="15" />
+   <edge id="d33" from="23" to="33" priority="1" numLanes="1" speed="15" />
+   <edge id="d43" from="33" to="43" priority="1" numLanes="1" speed="15" />
+   <edge id="d53" from="43" to="53" priority="1" numLanes="1" speed="15" />
+   <edge id="d63" from="53" to="63" priority="1" numLanes="1" speed="15" />
+   <edge id="d73" from="63" to="d3" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="d14" from="u4" to="14" priority="1" numLanes="1" speed="15" />
+   <edge id="d24" from="14" to="24" priority="1" numLanes="1" speed="15" />
+   <edge id="d34" from="24" to="34" priority="1" numLanes="1" speed="15" />
+   <edge id="d44" from="34" to="44" priority="1" numLanes="1" speed="15" />
+   <edge id="d54" from="44" to="54" priority="1" numLanes="1" speed="15" />
+   <edge id="d64" from="54" to="64" priority="1" numLanes="1" speed="15" />
+   <edge id="d74" from="64" to="d4" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="d15" from="u5" to="15" priority="1" numLanes="1" speed="15" />
+   <edge id="d25" from="15" to="25" priority="1" numLanes="1" speed="15" />
+   <edge id="d35" from="25" to="35" priority="1" numLanes="1" speed="15" />
+   <edge id="d45" from="35" to="45" priority="1" numLanes="1" speed="15" />
+   <edge id="d55" from="45" to="55" priority="1" numLanes="1" speed="15" />
+   <edge id="d65" from="55" to="65" priority="1" numLanes="1" speed="15" />
+   <edge id="d75" from="65" to="d5" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="d16" from="u6" to="16" priority="1" numLanes="1" speed="15" />
+   <edge id="d26" from="16" to="26" priority="1" numLanes="1" speed="15" />
+   <edge id="d36" from="26" to="36" priority="1" numLanes="1" speed="15" />
+   <edge id="d46" from="36" to="46" priority="1" numLanes="1" speed="15" />
+   <edge id="d56" from="46" to="56" priority="1" numLanes="1" speed="15" />
+   <edge id="d66" from="56" to="66" priority="1" numLanes="1" speed="15" />
+   <edge id="d76" from="66" to="d6" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="u01" to="u1" from="11" priority="1" numLanes="1" speed="15" />
+   <edge id="u11" to="11" from="21" priority="1" numLanes="1" speed="15" />
+   <edge id="u21" to="21" from="31" priority="1" numLanes="1" speed="15" />
+   <edge id="u31" to="31" from="41" priority="1" numLanes="1" speed="15" />
+   <edge id="u41" to="41" from="51" priority="1" numLanes="1" speed="15" />
+   <edge id="u51" to="51" from="61" priority="1" numLanes="1" speed="15" />
+   <edge id="u61" to="61" from="d1" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="u02" to="u2" from="12" priority="1" numLanes="1" speed="15" />
+   <edge id="u12" to="12" from="22" priority="1" numLanes="1" speed="15" />
+   <edge id="u22" to="22" from="32" priority="1" numLanes="1" speed="15" />
+   <edge id="u32" to="32" from="42" priority="1" numLanes="1" speed="15" />
+   <edge id="u42" to="42" from="52" priority="1" numLanes="1" speed="15" />
+   <edge id="u52" to="52" from="62" priority="1" numLanes="1" speed="15" />
+   <edge id="u62" to="62" from="d2" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="u03" to="u3" from="13" priority="1" numLanes="1" speed="15" />
+   <edge id="u13" to="13" from="23" priority="1" numLanes="1" speed="15" />
+   <edge id="u23" to="23" from="33" priority="1" numLanes="1" speed="15" />
+   <edge id="u33" to="33" from="43" priority="1" numLanes="1" speed="15" />
+   <edge id="u43" to="43" from="53" priority="1" numLanes="1" speed="15" />
+   <edge id="u53" to="53" from="63" priority="1" numLanes="1" speed="15" />
+   <edge id="u63" to="63" from="d3" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="u04" to="u4" from="14" priority="1" numLanes="1" speed="15" />
+   <edge id="u14" to="14" from="24" priority="1" numLanes="1" speed="15" />
+   <edge id="u24" to="24" from="34" priority="1" numLanes="1" speed="15" />
+   <edge id="u34" to="34" from="44" priority="1" numLanes="1" speed="15" />
+   <edge id="u44" to="44" from="54" priority="1" numLanes="1" speed="15" />
+   <edge id="u54" to="54" from="64" priority="1" numLanes="1" speed="15" />
+   <edge id="u64" to="64" from="d4" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="u05" to="u5" from="15" priority="1" numLanes="1" speed="15" />
+   <edge id="u15" to="15" from="25" priority="1" numLanes="1" speed="15" />
+   <edge id="u25" to="25" from="35" priority="1" numLanes="1" speed="15" />
+   <edge id="u35" to="35" from="45" priority="1" numLanes="1" speed="15" />
+   <edge id="u45" to="45" from="55" priority="1" numLanes="1" speed="15" />
+   <edge id="u55" to="55" from="65" priority="1" numLanes="1" speed="15" />
+   <edge id="u65" to="65" from="d5" priority="1" numLanes="1" speed="15" />
+
+
+   <edge id="u06" to="u6" from="16" priority="1" numLanes="1" speed="15" />
+   <edge id="u16" to="16" from="26" priority="1" numLanes="1" speed="15" />
+   <edge id="u26" to="26" from="36" priority="1" numLanes="1" speed="15" />
+   <edge id="u36" to="36" from="46" priority="1" numLanes="1" speed="15" />
+   <edge id="u46" to="46" from="56" priority="1" numLanes="1" speed="15" />
+   <edge id="u56" to="56" from="66" priority="1" numLanes="1" speed="15" />
+   <edge id="u66" to="66" from="d6" priority="1" numLanes="1" speed="15" />
+
+
+</edges>

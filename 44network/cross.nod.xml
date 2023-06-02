@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/nodes_file.xsd">
+
+
+   <node id="11" x="0.0" y="-0.0"  type="traffic_light"/>
+   <node id="12" x="1000.0" y="-0.0"  type="traffic_light"/>
+   <node id="13" x="2000.0" y="-0.0"  type="traffic_light"/>
+   <node id="14" x="3000.0" y="-0.0"  type="traffic_light"/>
+
+
+   <node id="21" x="0.0" y="-1000.0"  type="traffic_light"/>
+   <node id="22" x="1000.0" y="-1000.0"  type="traffic_light"/>
+   <node id="23" x="2000.0" y="-1000.0"  type="traffic_light"/>
+   <node id="24" x="3000.0" y="-1000.0"  type="traffic_light"/>
+
+
+   <node id="31" x="0.0" y="-2000.0"  type="traffic_light"/>
+   <node id="32" x="1000.0" y="-2000.0"  type="traffic_light"/>
+   <node id="33" x="2000.0" y="-2000.0"  type="traffic_light"/>
+   <node id="34" x="3000.0" y="-2000.0"  type="traffic_light"/>
+
+
+   <node id="41" x="0.0" y="-3000.0"  type="traffic_light"/>
+   <node id="42" x="1000.0" y="-3000.0"  type="traffic_light"/>
+   <node id="43" x="2000.0" y="-3000.0"  type="traffic_light"/>
+   <node id="44" x="3000.0" y="-3000.0"  type="traffic_light"/>
+
+
+   <node id="u1" x="0.0" y="1000.0"  type="priority"/>
+   <node id="u2" x="1000.0" y="1000.0"  type="priority"/>
+   <node id="u3" x="2000.0" y="1000.0"  type="priority"/>
+   <node id="u4" x="3000.0" y="1000.0"  type="priority"/>
+
+
+   <node id="d1" x="0.0" y="-4000.0"  type="priority"/>
+   <node id="d2" x="1000.0" y="-4000.0"  type="priority"/>
+   <node id="d3" x="2000.0" y="-4000.0"  type="priority"/>
+   <node id="d4" x="3000.0" y="-4000.0"  type="priority"/>
+
+
+   <node id="l1" x="-1000.0" y="-0.0"  type="priority"/>
+   <node id="l2" x="-1000.0" y="-1000.0"  type="priority"/>
+   <node id="l3" x="-1000.0" y="-2000.0"  type="priority"/>
+   <node id="l4" x="-1000.0" y="-3000.0"  type="priority"/>
+
+
+   <node id="r1" x="4000.0" y="-0.0"  type="priority"/>
+   <node id="r2" x="4000.0" y="-1000.0"  type="priority"/>
+   <node id="r3" x="4000.0" y="-2000.0"  type="priority"/>
+   <node id="r4" x="4000.0" y="-3000.0"  type="priority"/>
+
+
+</nodes>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<connections xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/connections_file.xsd">
+
+
+   <connection from="r11" to="r12"/>
+   <connection from="r12" to="r13"/>
+   <connection from="r13" to="r14"/>
+   <connection from="r14" to="r15"/>
+
+
+   <connection from="r21" to="r22"/>
+   <connection from="r22" to="r23"/>
+   <connection from="r23" to="r24"/>
+   <connection from="r24" to="r25"/>
+
+
+   <connection from="r31" to="r32"/>
+   <connection from="r32" to="r33"/>
+   <connection from="r33" to="r34"/>
+   <connection from="r34" to="r35"/>
+
+
+   <connection from="r41" to="r42"/>
+   <connection from="r42" to="r43"/>
+   <connection from="r43" to="r44"/>
+   <connection from="r44" to="r45"/>
+
+
+   <connection to="l10" from="l11"/>
+   <connection to="l11" from="l12"/>
+   <connection to="l12" from="l13"/>
+   <connection to="l13" from="l14"/>
+
+
+   <connection to="l20" from="l21"/>
+   <connection to="l21" from="l22"/>
+   <connection to="l22" from="l23"/>
+   <connection to="l23" from="l24"/>
+
+
+   <connection to="l30" from="l31"/>
+   <connection to="l31" from="l32"/>
+   <connection to="l32" from="l33"/>
+   <connection to="l33" from="l34"/>
+
+
+   <connection to="l40" from="l41"/>
+   <connection to="l41" from="l42"/>
+   <connection to="l42" from="l43"/>
+   <connection to="l43" from="l44"/>
+
+
+   <connection from="d11" to="d21"/>
+   <connection from="d21" to="d31"/>
+   <connection from="d31" to="d41"/>
+   <connection from="d41" to="d51"/>
+
+
+   <connection from="d12" to="d22"/>
+   <connection from="d22" to="d32"/>
+   <connection from="d32" to="d42"/>
+   <connection from="d42" to="d52"/>
+
+
+   <connection from="d13" to="d23"/>
+   <connection from="d23" to="d33"/>
+   <connection from="d33" to="d43"/>
+   <connection from="d43" to="d53"/>
+
+
+   <connection from="d14" to="d24"/>
+   <connection from="d24" to="d34"/>
+   <connection from="d34" to="d44"/>
+   <connection from="d44" to="d54"/>
+
+
+   <connection to="u01" from="u11"/>
+   <connection to="u11" from="u21"/>
+   <connection to="u21" from="u31"/>
+   <connection to="u31" from="u41"/>
+
+
+   <connection to="u02" from="u12"/>
+   <connection to="u12" from="u22"/>
+   <connection to="u22" from="u32"/>
+   <connection to="u32" from="u42"/>
+
+
+   <connection to="u03" from="u13"/>
+   <connection to="u13" from="u23"/>
+   <connection to="u23" from="u33"/>
+   <connection to="u33" from="u43"/>
+
+
+   <connection to="u04" from="u14"/>
+   <connection to="u14" from="u24"/>
+   <connection to="u24" from="u34"/>
+   <connection to="u34" from="u44"/>
+
+
+</connections>
