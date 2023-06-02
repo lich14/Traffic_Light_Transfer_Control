@@ -26,15 +26,16 @@ def get_args():
     parser.add_argument('--gae_lambda', type=float, default=0.95)
     parser.add_argument('--max_grad_norm', type=float, default=1.)
     parser.add_argument('--entropy_w', type=float, default=.03)
-    parser.add_argument('--comm_dim', type=int, default=16)
     parser.add_argument('--ICP_loss_w', type=float, default=0.001)
 
-    parser.add_argument('--points', type=int, default=3)
+    parser.add_argument('--points', type=int, default=2)
     parser.add_argument('--parrals', type=int, default=32)
     parser.add_argument('--GPU', type=str, default='cpu')
     parser.add_argument('--seed', type=int, default=0)
     parser.add_argument('--hidden_dim', type=int, default=256)
     parser.add_argument('--latent_dim', type=int, default=32)
+
+    parser.add_argument('--comm_dim', type=int, default=16)
     parser.add_argument('--comm_norm_w', type=float, default=0.001)
 
     parser.add_argument('--category_num', type=int, default=2)
@@ -76,7 +77,7 @@ if __name__ == '__main__':
     torch.manual_seed(args.seed)
     # np.random.seed(args.seed)
 
-    csv_dir = f'./csv_files/PPO_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}'
+    csv_dir = f'./csv_files/PPO_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}_comm_norm_w_{args.comm_norm_w}_comm_dim_{args.comm_dim}'
     csv_path = f'{csv_dir}/seed_{args.seed}.csv'
     if not os.path.exists(csv_dir):
         os.makedirs(csv_dir)
@@ -85,49 +86,29 @@ if __name__ == '__main__':
     runner = EpisodeRunner(args, agents, args.parrals,
                            args.points, args.GPU, args.difficult)
     writer = SummaryWriter(
-        f"runs/ppo_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}_seed_{args.seed}")
+        f"runs/ppo_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}_comm_norm_w_{args.comm_norm_w}_comm_dim_{args.comm_dim}_seed_{args.seed}")
 
     for main_step in range(2000):
-        if main_step % 20 == 19:
-            # episode_return, time_return = runner.eval()
-            episode_return, time_return, period_time = runner.eval_full()
-            writer.add_scalar(f"episode_return", episode_return, main_step)
-            writer.add_scalar(f"time_return", time_return, main_step)
-            writer.add_scalar(f"period_time_return", period_time, main_step)
+        with torch.no_grad():
+            if main_step % 20 == 19:
+                # episode_return, time_return = runner.eval()
+                episode_return, time_return, period_time = runner.eval_full()
+                writer.add_scalar(f"episode_return", episode_return, main_step)
+                writer.add_scalar(f"time_return", time_return, main_step)
+                writer.add_scalar(f"period_time_return",
+                                  period_time, main_step)
 
-            print(f'episode return: {episode_return}')
-            print(f'time return: {time_return}')
-            print('=' * 30)
+                print(f'episode return: {episode_return}')
+                print(f'time return: {time_return}')
+                print('=' * 30)
 
-            writereward(csv_path, period_time, time_return, main_step)
+                writereward(csv_path, period_time, time_return, main_step)
 
-        # sample
-        while True:
-            '''try:
-                obs, a, old_a_logp, v_preds, available_actions, rewards, terminate, actor_hidden_states, critic_hidden_states, _, _ = runner.run()
-                mask = torch.ones(
-                    (terminate.shape[0] + 1,) + terminate.shape[1:]).to(args.GPU)
-                mask[1:] = 1 - terminate
-                if mask.sum() > 0:
-                    break
-            except:
-                train_error_count += 1
-                print(f'sample error: {train_error_count} times')
-                agents.load_checkpoints()
-
-                try:
-                    runner.env.close()
-                except:
-                    pass
-                runner = EpisodeRunner(
-                    args, agents, args.parrals, args.points, args.GPU)'''
-
+            # sample
             obs, a, old_a_logp, v_preds, rewards, terminate, hidden_states, _, _, _ = runner.run()
             mask = torch.ones(
                 (terminate.shape[0] + 1,) + terminate.shape[1:]).to(args.GPU)
             mask[1:] = 1 - terminate
-            if mask.sum() > 0:
-                break
 
         # train
         obs = obs.to(args.GPU)
@@ -237,13 +218,13 @@ if __name__ == '__main__':
                 comm_E2W = comm_E2W.permute(1, 2, 0, 3, 4)
 
                 comm_N2S = torch.cat([comm_N2S[:, :, i]
-                                      for i in range(args.points)], dim=2).detach()
+                                      for i in range(args.points)], dim=2)
                 comm_S2N = torch.cat([comm_S2N[:, :, args.points - i - 1]
-                                      for i in range(args.points)], dim=2).detach()
+                                      for i in range(args.points)], dim=2)
                 comm_W2E = torch.cat([comm_W2E[:, :, :, i]
-                                      for i in range(args.points)], dim=2).detach()
+                                      for i in range(args.points)], dim=2)
                 comm_E2W = torch.cat([comm_E2W[:, :, list(reversed(
-                    list(range(args.points)))), i] for i in range(args.points)], dim=2).detach()
+                    list(range(args.points)))), i] for i in range(args.points)], dim=2)
 
                 comm_N2S_norm = F.l1_loss(comm_N2S, torch.zeros_like(
                     comm_N2S), reduction='none').sum(dim=-1, keepdim=True)
@@ -333,7 +314,7 @@ if __name__ == '__main__':
 
         if main_step % 100 == 0:
 
-            save_path = f"./models_ppo_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}_seed_{args.seed}/"
+            save_path = f"./models_ppo_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}_comm_norm_w_{args.comm_norm_w}_comm_dim_{args.comm_dim}_seed_{args.seed}/"
 
             if not os.path.exists(save_path):
                 os.makedirs(save_path)

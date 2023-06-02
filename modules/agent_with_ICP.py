@@ -89,7 +89,7 @@ class Agent(nn.Module):
 
         self.to(device)
         self.ICP.to(device)
-        self.save_path = f'checkpoints_PPO_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}_seed_{args.seed}'
+        self.save_path = f'checkpoints_PPO_ICP/points_{args.points}_difficult_{args.difficult}/category_{args.category_num}_reward_para_{args.reward_para}_comm_norm_w_{args.comm_norm_w}_comm_dim_{args.comm_dim}_seed_{args.seed}'
 
     def comm_n2s(self, obs, m):
         h = self.comm_mlp(obs)
